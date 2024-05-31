@@ -1,0 +1,548 @@
+/* * @font-face {
+        font-family: Nunito Sans;
+        src: url(https://fonts.google.com/specimen/Nunito+Sans);
+} */
+
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+body{
+    font-family: Nunito Sans, sans-serif;
+
+}
+
+body p{
+    padding-top: 1%;
+}
+
+.more-info-section{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+}
+.more-info-section img{
+    width: 100%;
+    height: 100%;
+}
+
+body #move-down{
+    margin-top: 17%;
+}
+
+body #marg-up{
+    margin-top: 1.5%;
+}
+
+body #marg-up1{
+    margin-top: 4%;
+    padding-bottom: 5%;
+}
+
+body #make-bold{
+    font-weight: bolder;
+    padding-right: 1%;
+}
+
+body #padder{
+    padding: 2% 3% 1.8% 3%;
+}
+
+body #padder2{
+    padding: 0% 3% 0% 3%;
+}
+
+/* FOR THE NAVIGATION END */
+nav{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 0.05);
+    position: relative;
+}
+
+nav .navbar-brand{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+nav .togger-section{
+    display: flex;
+    justify-content: space-between; 
+}
+
+nav .togger-section button{
+    margin-left: 5px;
+    font-size: 18px;
+    border:  none;
+    background-color:unset;
+}
+
+nav .togger-section img{
+    height: 15px;
+    position: absolute;
+    top: 43%;
+    right:10%;
+}
+
+/* FOR THE MAIN BODY */
+
+body option{
+    width: 10px;
+    height: ;
+    background-color: red;
+}
+.main-body .flex-bot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    position: relative;
+}
+
+.main-body .search-section input{
+    padding: 6% 10% ;
+    text-align: center;
+    width: 150%;
+    height: 120%;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 0.05);
+    background-color:unset;
+}
+
+
+.main-body .back-section img{
+    position:absolute;
+    height: 12px;
+    top: 38%;
+    left: 0.6%;
+}
+
+
+section .back-section #back-buttler{
+    padding: 40% 120% 40% 120%;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 1, 0.1);
+    background-color: unset;
+    border: none;
+    border-radius: 10px;
+}
+
+.main-body .search-section img{
+    position:absolute;
+    height: 12px;
+    top: 42%;
+    left: 2%;
+}
+
+.main-body .flex-bot .sort-section input{
+    padding: 6% 10% ;
+    text-align: center;
+    width: 124%;
+    height: 120%;
+    border: unset;
+    border-radius: 20px;
+    margin-left: -24%;
+    box-shadow: 0 4px 8px rgba(0, 0, 1, 0.05);
+    background-color:unset
+}
+
+.main-body .flex-bot .sort-section img{
+    position:absolute;
+    height: 12px;
+    top: 42%;
+    right: 1.3%;
+}
+
+
+.main-body-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2% 3% 2% 3%;
+
+}
+
+.main-body-cards .card{
+    /* border: 1px solid #ccc; */
+    width: 22.5%;
+    height: 290px;
+    justify-content:space-evenly;
+    border-radius: 9px;
+    margin-top: 1.5%;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
+}
+
+.main-body-cards .card .img-container{
+    overflow: hidden;
+    height: 62%;
+    border-radius: 9px 9px 0 0;
+}
+.main-body-cards .card .country-title{
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+.main-body-cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 9px 9px 0 0;
+}
+
+.main-body-cards .card:hover{
+    box-shadow: 0 9px 19px 0 rgba(0, 0, 0, 0.3);
+    color: #572727 !important;
+    transition: 0.6s;
+}
+
+.main-body-cards .card:hover img{
+    transition: 0.6s;
+    transform: scale(1.10);
+}
+
+.main-body-cards .card .card-content{
+    padding: 5% 8% 20% 8%;
+}
+
+@media screen and (max-width: 1118px){
+    nav .togger-section img{
+            top:37%;
+            right:12.6%;
+    }
+}
+
+@media screen and (max-width: 993px){
+    nav .togger-section img{
+            top:38%;
+            right:12.9%;
+    }
+}
+
+@media screen and (max-width: 926px){
+    nav .togger-section img{
+            top:38%;
+            right:13.7%;
+            height: 23% ;
+    }
+}
+
+@media screen and (max-width: 895px){
+    nav .togger-section img{
+            top:37.2%;
+            right:13.7%;
+    }
+    nav .navbar-brand{
+            font-size: 16px;
+    }
+
+    nav .togger-section button{
+            font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 853px){
+    nav .togger-section img{
+            top:36.5%;
+            right: 14%;
+    }
+    nav .navbar-brand{
+            font-size: 16px;
+    }
+
+    nav .togger-section button{
+            font-size: 15.8px;
+    }
+    .main-body-cards .card{
+            height: 260px;
+    }
+
+    .main-body-cards .card .img-container{
+            height: 50%;
+    }
+    .main-body-cards .card .img-container img{
+            height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav .togger-section img{
+            top:36%;
+            right: 15.8%;
+    }
+    .main-body-cards{
+            flex-wrap: wrap;
+    }
+    .main-body-cards .card{
+            width: 48%;
+    }
+    .main-body-cards .card{
+            height: 30%;
+            margin-bottom: 4%;
+    }
+
+    .main-body-cards .card .img-container{
+            height: 150px;
+    }
+
+    .main-body-cards .card .img-container img{
+            height: 100%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    nav .togger-section img{
+            top:34.8%;
+            right: 17.5%;
+    }
+    nav .navbar-brand{
+            font-size: 15.8px;
+    }
+
+    nav .togger-section button{
+            font-size: 15.8px;
+    }
+    .more-info-section{
+            max-width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5.5%;
+    }
+
+    .more-info-section img{
+            width: 105%;
+    }
+
+    .more-info-section h3{
+            font-size: 18px;
+    }
+
+    .more-info-section p{
+            font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    nav .togger-section img{
+            top:34.3%;
+            right: 17.8%;
+    }
+    nav .navbar-brand{
+            font-size: 14px;
+    }
+
+    nav .togger-section button{
+            font-size: 14px;
+    }
+    .more-info-section{
+            max-width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14%;
+    }
+    .more-info-section img{
+            width: 115%;
+    }
+    body #move-down{
+            margin-top: -6%;
+    }
+}
+@media screen and (max-width: 585px) {
+    nav .togger-section img{
+            top:34.6%;
+            right: 19%;
+            height: 30% ;
+    }
+    .main-body-cards .card p{
+           font-size: 16px;
+    }
+    .main-body .search-section img{
+            height: 13px;
+            left: 3%;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    nav .togger-section img{
+            top:36.5%;
+            right: 16.8%;
+            height: 30%;
+    }
+
+    nav .navbar-brand{
+            font-size: 12px;
+    }
+
+    nav .togger-section button{
+            font-size: 12px;
+    }
+    .main-body-cards .card{
+            height: 10%;
+            margin-top: 2%;
+    }
+
+    .main-body-cards .card .img-container{
+            height: 100px;
+    }
+    .main-body .search-section{
+            width: 60%;
+            font-size: 12px;
+    }
+    .main-body .search-section input{
+            height: 100%;
+            font-size: 12px;
+    }
+    .main-body .search-section img{
+            height: 13px;
+            top: 14%;
+            left: 4.5%;
+    }
+    .main-body .flex-bot .sort-section{
+            width: 50%;
+    }
+    .main-body .flex-bot .sort-section input{
+            width: 120%;
+            height: 79%;
+            font-size: 12px;
+            margin-left: 0;
+            padding-left: 25%;
+            margin-top: 6%;
+    }
+    
+    .main-body .flex-bot .sort-section img{
+            height: 13px;
+            top: 73%;
+            left: 4.5%;
+    }
+
+    section .flex-bot button{
+            padding: 1% 10% 1% 17%;
+    }
+    section .flex-bot button{
+            font-size: 10.4px;
+    }
+    
+}
+
+@media screen and (max-width: 437px) {
+    nav .togger-section img{
+            top:36%;
+            right: 29%;
+            height: 26%;
+    }
+
+    nav .navbar-brand{
+            font-size: 12px;
+    }
+
+    nav .togger-section button{
+            font-size: 12px;
+    }
+    .main-body-cards{
+            justify-content: center;
+    }
+    .main-body-cards p{
+            font-size: 13px !important;
+    }
+
+    .main-body-cards h3{
+            font-size: 17.2px !important;
+    }
+
+
+    .main-body-cards .card{
+            width: 80%;
+    }
+    .main-body .flex-bot{
+            display: flex;
+            justify-content:space-between;
+    }
+    .more-info-section{
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 10%;
+    }
+    .more-info-section img{
+            width: 100%;
+    }
+    body #marg-up1{
+            margin-top: -3%;
+            padding-bottom: 4%;
+    }
+
+    body #padder{
+            padding: 4% 13% 4% 12%;
+    }
+
+    .main-body .search-section input{
+            padding: 3.6% 20% ;
+            width: 150%;
+            height: 120%;
+    }
+ 
+    .main-body .flex-bot .sort-section input{
+            padding: 3.6% 10% 3.6% 25% ;
+            width: 150%;
+            margin-top: 14%;
+            margin-bottom: 2%;
+    }
+
+    .main-body .flex-bot .sort-section img{
+            position:absolute;
+            height: 15px;
+            top: 80%;
+            right: 0.8%;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 393px) {
+    nav .togger-section img{
+            top:38%;
+            right: 30%;
+    }
+
+    nav .navbar-brand{
+            font-size: 12px;
+    }
+
+    nav .togger-section button{
+            font-size: 12px;
+    }
+ 
+   
+    body .search-section input{
+            padding-top: 10%;
+    }
+
+    .main-body .flex-bot .sort-section img{
+            height: 10px;
+            top: 80%;
+    }
+    .main-body .search-section img{
+            height: 10px;
+    }
+}
+
+@media screen and (max-width: 349px) {
+    nav .togger-section img{
+            top:34.5%;
+            top:34.5%;
+            right: 33%;
+    }      
+}
+
+@media screen and (max-width: 295px) {
+    nav .togger-section img{
+            top:35.8%;
+            right: 36%;
+    }
+}
+
+body section .flex-bot datalist .option{
+    font-size: 8px;
+} 

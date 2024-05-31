@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info</title>
+    <link rel="stylesheet" href="./css/style2.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary" id="padder">
+            <a class="navbar-brand" style="text-decoration: none" href="./index.html" id="nav-logo">Where in the world?</a>
+            <div class="togger-section">
+                <img id="img-sizer" src="img/1.Moon-_Sleep_-Day.png" alt="" srcset="">
+                <button type="button" class="navbar-button-toggler2" id="navbar-button-toggler">Dark mode</button>
+            </div>
+        </nav>
+        <div id="back-button-cruiser">
+            <button id="backButton">Back</button>
+        </div>
+        
+    </header>
+    <div id="countryInfo" class="container"></div>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/app.js"></script>
+    <script src="./js/toggler2.js"></script>
+    <script>
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const selectedCountry = JSON.parse(localStorage.getItem('selectedCountry'));
+            const countryInfoDiv = document.getElementById('countryInfo');
+            if (selectedCountry) {
+                countryInfoDiv.innerHTML = `
+                    <div class="img-container">
+                        <img src="${selectedCountry.flags.svg}" alt="" srcset="" class="more-info-img">
+                    </div>
+                    <div>
+                        <div id="top-p">
+                            <div>
+                                <div class="card-content" id="top1">
+                                <h3 class="country-title" id="marg-up1">${selectedCountry.name.common}</h3>
+                                <p class="native-name" id="marg-up"><strong>Native Name:</strong> ${selectedCountry.name.common}</p>
+                                <p class="population" id="marg-up"><strong>Population:</strong> ${selectedCountry.population}</p>
+                                <p class="region" id="marg-up"><strong>Region:</strong> ${selectedCountry.region}</p>
+                                <p class="sub-region" id="marg-up"><strong>Sub Region:</strong>${selectedCountry.subregion}</p>
+                                <p class="capital" id="marg-up"><strong>Capital:</strong>${selectedCountry.capital}</p>
+                            </div>
+                            <div class="card-content1" id="top2">
+                                <p class="top-level-domain" id="marg-up"><strong>Top Level Domain:</strong>  ${selectedCountry.tld}</p>
+                                <p class="curency" id="marg-up"><strong>Currencies:</strong> ${Object.values(selectedCountry.currencies).map(currency => currency.name).join(', ')}</p>
+                                <p class="language" id="marg-up"><strong>Language:</strong> ${Object.values(selectedCountry.languages).join(', ')}</p>
+                            </div>
+                        </div>    
+                        <div  id="move-down; bottom">
+                            <p class="top-level-domain" id="marg-up"><strong>Top Level Domain:</strong>  ${selectedCountry.tld}</p>
+                            <p class="curency" id="marg-up"><strong>Currencies:</strong> ${Object.values(selectedCountry.currencies).map(currency => currency.name).join(', ')}</p>
+                            <p class="language" id="marg-up"><strong>Language:</strong> ${Object.values(selectedCountry.languages).join(', ')}</p>
+                        </div>
+                    </div>
+                </div>                        
+                 
+
+                `;
+            } else {
+                countryInfoDiv.innerHTML = '<p>No country selected.</p>';
+            }
+        });
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>
