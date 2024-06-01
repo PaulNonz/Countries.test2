@@ -9,94 +9,41 @@ body {
     background-color: #f0f0f0;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
-    /* padding: 2%; */
+}
 
+body p{
+    padding-top: 1%;
 }
 
 #backButton{
     padding: 0.7%;
+    margin-top: 2%;
     border-radius: 30%;
     border-width: 0cap;
-    box-shadow: 0px 4px 8px rgba(41, 21, 21, 0.2)
-
+    box-shadow: 0px 4px 8px rgba(41, 21, 21, 0.2);
+    margin-left: 2.6%;
+    background-color: transparent;
 }
-#back-button-cruiser{
-    margin-top: 1.2%;
 
+body #padder{
+    padding: 2% 3% 1.8% 3%;
+}
+
+#backButton #back-img{
+    max-height: 10px;
+    margin-top: 10%;
+    position: relative;
+    top: 1.2px;
+}
+
+#back-button-cruiser{
+    margin-top: 1.2%; 
 }
 
 .dark-mode {
     background-color: #333;
     color: #f0f0f0;
 }
-body p{
-    padding-top: 1%;
-}
-
-.container {
-    display: grid;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.img-container {
-    /* text-align: center;
-    margin-bottom: 20px;
-    height: 2%; */
-    max-width: 40%;
-    flex: 1;
-}
-
-
-#top-p{
-    display: flex;
-    /* flex: 2; */
-    display: row;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.more-info-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.card-content, .card-content1 {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.dark-mode-card {
-    background: #444;
-    color: #ddd;
-}
-
-h3 {
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-/* Navbar styling */
-
-/* FOR THE NAVIGATION END */
-
-body #padder{
-    padding: 2% 3% 1.8% 3%;
-}
-
-
 
 nav{
     display: flex;
@@ -111,7 +58,6 @@ nav .togger-section button{
     border:  none;
     background-color:unset;
 }
-
 
 .togger-section {
     display: flex;
@@ -136,6 +82,105 @@ nav .navbar-brand{
     color: black;
 }
 
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+.container {
+    padding: 2.4%;
+    /* background-color: blueviolet; */
+}
+
+/* .img-container {
+    max-width: 50%;
+    flex: 1;
+    background-color: #444;
+}
+
+.img-container img{
+    max-width: 100%;
+}
+
+#top-p{
+  display: none;
+    background-color: greenyellow;
+}
+ */
+
+ .dark-mode-card {
+    background: #444;
+    color: #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+ .container{
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    /* padding: 5%; */
+}
+
+.img-container{
+    max-width: 50%;
+}
+
+.img-container img{
+    max-width: 90%;
+}
+
+.textAndButton{
+    max-width: 1200px;
+    /* background-color: aliceblue; */
+    /* padding: 5%; */
+}
+
+.container .one{
+    /* background-color: red; */
+    padding-top: 6%;
+}
+
+.container .two{
+    /* background-color: rgb(107, 18, 18); */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-content: end;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.container .three{
+    /* background-color: rgb(35, 106, 139); */
+    display: flex;
+    flex-direction: row;
+    justify-content:space-betw;
+}
+.container .three button{
+    margin-left: 4%;
+
+    padding: 0.7%;
+    border-radius: 30%;
+    border-width: 0cap;
+    box-shadow: 0px 4px 8px rgba(41, 21, 21, 0.2);
+    margin-left: 2.6%;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -145,6 +190,21 @@ nav .navbar-brand{
     .card-content, .card-content1 {
         max-width: 100%;
     }
+
+    .container{
+        /* background-color: greenyellow; */
+        display: flex;
+        flex-direction: column;
+   
+    }
+    .img-container{
+        max-width: 100%;
+    }
+    
+    .img-container img{
+        max-width: 100%;
+    }
+    
 }
 
 @media (max-width: 480px) {
